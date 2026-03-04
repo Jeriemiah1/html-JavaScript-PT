@@ -1,0 +1,67 @@
+<!DOCTYPE html> <!-- Defines this document as HTML5 -->
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> <!-- Allows special characters -->
+  <title>Simple Quiz Website</title> <!-- Title shown in browser tab -->
+
+  <!-- Connects the CSS file for styling -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Main container holding the entire quiz -->
+  <div class="quiz-container">
+
+    <h1>Simple Quiz Website</h1>
+
+    <!-- Button to switch between light mode and dark mode -->
+    <button class="dark-toggle" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+
+    <!-- Timer display -->
+    <p id="timer">Time Left: 10</p>
+
+    <!-- The quiz question will appear here -->
+    <p id="question"></p>
+
+    <!-- Buttons for answer choices -->
+    <div class="choices">
+
+      <!-- When clicked, each button calls the checkAnswer function -->
+      <button id="A" onclick="checkAnswer('A')"></button>
+      <button id="B" onclick="checkAnswer('B')"></button>
+      <button id="C" onclick="checkAnswer('C')"></button>
+
+    </div>
+
+    <!-- Displays if the answer is Correct or Wrong -->
+    <p id="result"></p>
+
+    <!-- Displays the current score -->
+    <p id="score">Score: 0</p>
+
+    <!-- Button to move to the next question -->
+    <button onclick="nextQuestion()">Next</button>
+
+    <!-- Button to restart the quiz -->
+    <button onclick="resetQuiz()">Reset Quiz</button>
+
+    <hr>
+
+    <!-- Leaderboard section -->
+    <h2>🏆 Leaderboard</h2>
+
+    <!-- Player scores will appear here -->
+    <ul id="leaderboard"></ul>
+
+    <!-- Button to clear leaderboard -->
+    <button onclick="clearLeaderboard()">Clear Leaderboard</button>
+
+  </div>
+
+  <!-- Connects the JavaScript file -->
+  <script src="script.js"></script>
+
+</body>
+</html>

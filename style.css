@@ -1,0 +1,103 @@
+/* Styles the entire webpage */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+
+  /* Gradient background */
+  background: linear-gradient(135deg, #667eea, #764ba2);
+
+  min-height: 100vh;
+
+  /* Center the quiz on the page */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0;
+}
+
+/* Dark mode background */
+body.dark {
+  background: #121212;
+}
+
+/* Main quiz container (card design) */
+.quiz-container {
+  background: #ffffff;
+  padding: 30px;
+  width: 350px;
+
+  /* Rounded edges */
+  border-radius: 15px;
+
+  /* Shadow effect */
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+
+  text-align: center;
+}
+
+/* Dark mode container style */
+body.dark .quiz-container {
+  background: #1e1e1e;
+  color: white;
+}
+
+/* Timer style */
+#timer {
+  font-weight: bold;
+  color: #e63946;
+}
+
+/* General button styling */
+button {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+
+  font-size: 15px;
+
+  border: none;
+  border-radius: 8px;
+
+  background-color: #667eea;
+  color: white;
+
+  cursor: pointer;
+
+  transition: transform 0.2s, background 0.3s;
+}
+
+/* Button hover effect */
+button:hover:enabled {
+  background-color: #5a67d8;
+  transform: scale(1.03);
+}
+
+/* Disabled button appearance */
+button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+/* Score text styling */
+#score {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Leaderboard list style */
+#leaderboard {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+/* Individual leaderboard entries */
+#leaderboard li {
+  padding: 5px;
+  font-weight: bold;
+}
+
+/* Dark mode toggle button style */
+.dark-toggle {
+  background: #333;
+}
