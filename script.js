@@ -142,7 +142,10 @@ function nextQuestion() {
     clearInterval(timer); // Stop timer
 
     // Display final score
-    alert("Quiz Finished! Your Score: " + score);
+    let playerName = prompt("Enter your name:");
+
+    alert("Quiz Finished " + playerName + "!
+          Your Score: " + score);
   }
 }
 
@@ -183,4 +186,5 @@ function toggleDarkMode() {
 
 
 // Automatically loads the first question when the page opens
+
 loadQuestion();
